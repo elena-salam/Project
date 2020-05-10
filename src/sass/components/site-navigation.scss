@@ -1,0 +1,45 @@
+.site-navigation{
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin-bottom: 160px;
+  padding: 0;
+}
+  
+.site-navigation__link{      
+  font-family: $main-font-stack;
+  font-weight: 400;   
+}
+  
+.site-navigation__link::after{
+  display: block;
+  content: '';
+  width: 0%;
+  height: 3px;   
+  background-color: transparent;   
+  margin-top: 6px;    
+}
+  
+.site-navigation__link:hover, .site-navigation__link:focus{
+  color: $tertiary-accent-color;
+  cursor: pointer;
+  &::after{
+    width: 100%;  
+    background-color: $tertiary-accent-color;
+  }   
+}
+  
+.site-navigation__link:hover::after{
+  width: 100%;  
+  background-color: $tertiary-accent-color;
+}
+  
+  
+.shopping-cart,
+.magnifying-glass{
+  fill: $primary-white-color;
+  &:hover,
+  &:focus{
+    fill: $tertiary-accent-color;
+  }
+}

@@ -1,0 +1,84 @@
+.services__item{    
+  width: 383px;    
+  position: relative;
+  padding-left: 83px;
+  &::before{
+    position: absolute;
+    left: 0px;
+    content: '';
+    display: block;
+    width: 83px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+  
+.services__item-title{    
+  font-family: $main-font-stack;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;      
+  text-align: left;
+  margin: 0;
+}
+  
+.services__item:nth-child(-n+3){
+  margin-bottom: 100px;
+}
+  
+.services__icon--photo::before{
+  background-image: url(../images/icons/photo.png);
+}
+  
+.services__icon--web::before{
+  background-image: url(../images/icons/web.png);
+}
+  
+.services__icon--creativity::before{
+  background-image: url(../images/icons/creativity.png);
+  height: 28px;
+}
+  
+.services__icon--seo::before{
+  background-image: url(../images/icons/seo.png);
+}
+  
+.services__icon--css::before{
+  background-image: url(../images/icons/css.png);
+  height: 31px;
+}
+  
+.services__icon--digital::before{
+  background-image: url(../images/icons/Digital.png);
+}
+  
+  
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .services__icon--photo::before{
+    background-image: url(../images/icons/photo@2x.png);
+  }
+  
+  .services__icon--web::before{
+    background-image: url(../images/icons/web@2x.png);
+  }
+  
+  .services__icon--creativity::before{
+    background-image: url(../images/icons/creativity@2x.png);
+    height: 28px;
+  }
+  
+  .services__icon--seo::before{
+    background-image: url(../images/icons/seo@2x.png);
+  }
+    
+  .services__icon--css::before{
+    background-image: url(../images/icons/css@2x.png);
+    height: 31px;
+  }
+    
+  .services__icon--digital::before{
+    background-image: url(../images/icons/Digital@2x.png);
+  }
+}

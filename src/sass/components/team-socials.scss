@@ -1,0 +1,44 @@
+.social__item .socials__link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  background-color: $tertiary-accent-color;
+      
+}
+  
+.socials .social__item:not(:last-child){
+  margin-right: 2px;
+}
+  
+.socials{
+  position: absolute;
+  left: 84px;
+  top: 207px;    
+  display: flex;
+  justify-content: space-between;    
+  list-style: none;
+  padding: 0;
+         
+}
+  
+.socials svg{
+  display: block;
+  width: 30px;
+  height: 30px;
+  fill: $primary-accent-color;
+      
+}
+  
+.socials a:hover svg,
+.socials a:focus svg{
+  fill: $primary-white-color;
+  
+}
+  
+.socials a:hover,
+.socials a:focus{
+  background-color: $primary-accent-color;
+      
+}

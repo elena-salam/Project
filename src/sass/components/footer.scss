@@ -1,0 +1,37 @@
+footer{
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+  align-items: center;
+}  
+  
+.subscribtion{    
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: $seconary-accent-color;
+  font-family: $main-font-stack;
+  font-weight: 700;
+  color: $primary-white-color;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+  
+.entity{
+  color: $primary-accent-color;
+  text-decoration: none;
+}
+  
+input{
+  width: 230px;
+  height: 40px;
+  border: 1px solid rgb(231, 231, 231);
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(204, 204, 204);
+  font-style: italic;
+  line-height: 1.6;
+  padding-left: 12px;
+}
+  
